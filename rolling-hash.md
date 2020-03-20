@@ -9,6 +9,5 @@ Make a rolling hash based file diffing algorithm in Rust, that splits any file i
 
 - Work with byte data. Demonstrate the functionality with text by converting it to bytes before diffing and vice versa.
 - Hashing function gets the data as a parameter. Separate possible filesystem operations.
-- Working tests, > 85 % coverage preferred
 - Chunk size can be fixed or dynamic, but must be split to at least two chunks on any sufficiently sized data.
 - Well-written unit tests function well in describing the operation, no UI necessary.

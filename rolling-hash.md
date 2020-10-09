@@ -7,7 +7,7 @@ Make a rolling hash based file diffing algorithm in Rust. When comparing origina
 
 The real-world use case for this type of construct could be a distributed file storage system. This reduces the need for bandwidth and storage. If many people have the same file stored on Dropbox, for example, there's no need to upload it again.
 
-A library that does a similar thing is [rdiff](https://linux.die.net/man/1/rdiff). You don't need to fulfill the patch part of the API, only signature and delta. 
+A library that does a similar thing is [rdiff](https://linux.die.net/man/1/rdiff). You don't need to fulfill the patch part of the API, only signature and delta.
 
 ## Requirements
 - Hashing function gets the data as a parameter. Separate possible filesystem operations.

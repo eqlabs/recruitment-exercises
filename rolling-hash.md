@@ -17,7 +17,7 @@ A library that does a similar thing is [rdiff](https://linux.die.net/man/1/rdiff
 
 ## Checklist
 1. Input/output operations are separated from the calculations
-2. detects block changes and/or additions
-3. detects block removals
-4. detects additions between blocks with shifted blocks
+2. detects chunk changes and/or additions
+3. detects chunk removals
+4. detects additions between chunks with shifted original chunks
 

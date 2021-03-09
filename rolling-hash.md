@@ -1,7 +1,7 @@
-# Rolling Hash Algorithm in Rust
-_Spec v3 (2020-05-05)_
+# Rolling Hash Algorithm
+_Spec v4 (2021-03-09)_
 
-Make a rolling hash based file diffing algorithm in Rust. When comparing original and an updated version of an input, it should return a description ("delta") which can be used to upgrade an original version of the file into the new file. The description contains the chunks which:
+Make a rolling hash based file diffing algorithm. When comparing original and an updated version of an input, it should return a description ("delta") which can be used to upgrade an original version of the file into the new file. The description contains the chunks which:
 - Can be reused from the original file
 - have been added or modified and thus would need to be synchronized
 

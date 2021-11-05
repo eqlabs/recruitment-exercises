@@ -22,4 +22,5 @@ Following properties will be evaluated in this exercise:
 
 - **Development experience**. The resulting repository should be easy to grasp and extend on.
 - **Performance**. Assets should be optimized and lazy loaded.
+- **UI**. The UI should be usable on any commonly used screen size.
 - **Deployment**. The website should have a concise continuous deployment pipeline.

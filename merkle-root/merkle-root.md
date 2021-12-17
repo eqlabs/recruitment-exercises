@@ -13,9 +13,3 @@ The task is to compute the merkle tree root corresponding to a set of transactio
 ## Input
 
 The supplied transactions are in their hashed form and are ordered. The input file has one hex-encoded transaction per line.
-
-
-
-
-
-

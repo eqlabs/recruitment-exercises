@@ -16,8 +16,8 @@ defmodule Cache do
   Arguments:
     - `fun`: a 0-arity function that computes the value and returns either
       `{:ok, value}` or `{:error, reason}`.
-    - `key`: a term which is associated with the function and is used to
-      retrieve the stored value.
+    - `key`: associated with the function and is used to retrieve the stored
+    value.
     - `ttl` ("time to live"): how long (in milliseconds) the value is stored
       before it is discarded if the value is not refreshed.
     - `refresh_interval`: how often (in milliseconds) the function is
@@ -35,7 +35,10 @@ defmodule Cache do
           ttl :: non_neg_integer(),
           refresh_interval :: non_neg_integer()
         ) :: :ok | {:error, :already_registered}
-  def register_function(fun, key, ttl, refresh_interval) when is_function(fun, 0) do
+  def register_function(fun, key, ttl, refresh_interval)
+      when is_function(fun, 0) and is_integer(ttl) and ttl > 0 and
+             is_integer(refresh_interval) and
+             refresh_interval < ttl do
   end
 
   @doc ~s"""

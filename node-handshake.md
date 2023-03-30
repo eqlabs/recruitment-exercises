@@ -24,4 +24,4 @@ Pick a publicly available P2P node (e.g. a blockchain one) implementation - whic
 - **Security**: the network is an inherently untrusted environment, and it should be taken into account.
 - **Minimalism**: any number of dependencies can be used, but they should be tailored to the task.
 - **Versatility**: the more broadly applicable the solution is (bi-directional, unfixed values, etc.), the better.
-- **Uniqueness**: The more intricate the handshake logic is, the better - bonus points for non-[Bitcoin](https://github.com/bitcoin/bitcoin) implementations.
+- **Uniqueness**: bonus points for non-Bitcoin implementations.

@@ -6,7 +6,6 @@ defmodule Cache do
           | {:error, :timeout}
           | {:error, :not_registered}
 
-  @impl GenServer
   def start_link(opts \\ []) do
   end
 
